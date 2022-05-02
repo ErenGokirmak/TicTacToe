@@ -1,4 +1,3 @@
-status = '-'
 board = ['-', '-', '-',
          '-', '-', '-',
          '-', '-', '-']
@@ -19,7 +18,7 @@ def display_board():
 
 
 def check_win():
-    # Checking rows
+    # Checking rows, then columns, then diagonals
     global winner
     row1 = board[0] == board[1] == board[2] != '-'
     row2 = board[3] == board[4] == board[5] != '-'
@@ -47,10 +46,13 @@ def check_tie():
 def handle_turn(turn):
     # Getting the move from player
     move = input('Choose a position from 1-9: ')
-    # Converting the input into an integer an translating it into an index for the board list
+
+    # Checking that it is a valid move.
 
     while move not in ['1', '2', '3', '4', '5', '6', '7', '8', '9']:
         move = input('Please choose a position from 1-9:')
+
+    #Converting the move to an int and game logic.
     move = int(move) - 1
     if move > -1 and move < 9:
         if board[move] == '-':
