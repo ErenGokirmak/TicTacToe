@@ -1,5 +1,7 @@
 # TicTacToe
-Basic command line based TicTacToe game
+Basic command line based TicTacToe game.
+
+A tutorial for myself. If you see any improvements to be made, feel free to inform me.
 
 The code contains
 
@@ -9,4 +11,4 @@ The code contains
 
 -Checks for win and tie conditions.
 
-A tutorial for myself. If you see any improvements to the code, feel free to inform me.
+
